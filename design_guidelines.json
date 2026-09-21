@@ -1,0 +1,131 @@
+{
+  "project_name": "FixMyCity",
+  "archetype": "Dark Glassmorphism Civic-Tech HUD",
+  "theme": {
+    "mode": "dark-first",
+    "background_primary": "#07090E",
+    "background_secondary": "#0D111A",
+    "background_card": "rgba(17, 24, 39, 0.65)",
+    "glass_blur": "backdrop-blur-xl",
+    "glass_border": "1px solid rgba(255, 255, 255, 0.08)",
+    "glass_border_active": "1px solid rgba(0, 240, 255, 0.3)",
+    "accent_primary": "#00F0FF",
+    "accent_secondary": "#8B5CF6",
+    "accent_success": "#10B981",
+    "accent_warning": "#F59E0B",
+    "accent_danger": "#EF4444",
+    "text_primary": "#F9FAFB",
+    "text_muted": "#9CA3AF"
+  },
+  "typography": {
+    "font_family_heading": "Plus Jakarta Sans, sans-serif",
+    "font_family_body": "Inter, sans-serif",
+    "h1_hero": "text-4xl sm:text-5xl font-extrabold tracking-tight",
+    "h2_section": "text-2xl sm:text-3xl font-bold tracking-tight",
+    "h3_card": "text-lg sm:text-xl font-semibold",
+    "label": "text-xs font-semibold uppercase tracking-wider text-cyan-400"
+  },
+  "status_badges": {
+    "Pending": {
+      "bg": "bg-rose-500/10 text-rose-400 border border-rose-500/30",
+      "glow": "shadow-[0_0_12px_rgba(244,63,94,0.3)]",
+      "pulse": "animate-pulse"
+    },
+    "In Progress": {
+      "bg": "bg-amber-500/10 text-amber-400 border border-amber-500/30",
+      "glow": "shadow-[0_0_12px_rgba(245,158,11,0.3)]",
+      "pulse": "animate-pulse"
+    },
+    "Resolved": {
+      "bg": "bg-emerald-500/10 text-emerald-400 border border-emerald-500/30",
+      "glow": "shadow-[0_0_12px_rgba(16,185,129,0.3)]",
+      "pulse": ""
+    }
+  },
+  "views": {
+    "landing": {
+      "tagline": "Report it. Track it. Get it fixed.",
+      "hero_style": "Large bold gradient typography, dark mesh glow background, quick CTA buttons for 'Report Issue' & 'Explore Feed'",
+      "features": "Real-time AI Categorization, Color-Coded Map Pin Tracking, Civic Gamification & Community Upvoting"
+    },
+    "citizen_mobile_app": {
+      "layout": "Mobile-first PWA bottom navigation bar (Feed, Map, Report +, My Reports, Leaderboard)",
+      "feed": "Glassmorphism issue cards with a swipeable media gallery (photos + video with play badge), category pill, distance indicator, upvote button with active state, status badge with live pulse",
+      "post_issue_flow": "Step-by-step modal or screen with multi-photo upload (thumbnail strip with remove buttons, max files enforced) and optional video upload with inline preview, upload progress bar per file, simulated AI optical scanning frame effect with neon laser line animation on the first photo, auto-detected tag badge, map location picker, description textarea",
+      "map_view": "Dark interactive map backdrop with custom SVG pin markers (color-coded red/yellow/green), bouncing drop animation, pulsing urgency ring around unresolved high-priority issues",
+      "gamification": "Points meter, civic badges (e.g., 'Street Warden', 'Pothole Patrol', 'Eco Guardian'), community leaderboard table/cards"
+    },
+    "admin_dashboard": {
+      "layout": "Desktop sidebar + header HUD layout",
+      "complaint_table": "Filterable issue grid with status pills, priority flags, assignment dropdowns, deadline picker, and quick detail drawer",
+      "assignment_modal": "Assign task to field workers (e.g., 'Team Alpha - Road Works'), set resolution deadline, append administrative notes",
+      "analytics": "Animated count-up metric cards (Total Reported, Avg Resolution Time, Active Issues, Resolved Rate), Recharts area & bar charts with dark cyan/violet gradients"
+    },
+    "field_worker_view": {
+      "layout": "Clean high-contrast task queue for mobile/tablet in field",
+      "task_card": "Issue location map shortcut, original photos/video gallery, assigned deadline countdown, status updater button",
+      "resolution_modal": "Upload one or more 'After Photo' proofs (optional short video), field notes entry, submit resolution completion"
+    }
+  },
+  "image_urls": {
+    "pothole": "https://images.unsplash.com/photo-1560782205-4dd83ceb0270?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwzfHxwb3Rob2xlJTIwcm9hZCUyMGRhbWFnZSUyMGNpdHklMjBzdHJlZXR8ZW58MHx8fHwxNzg5ODc2OTk3fDA&ixlib=rb-4.1.0&q=85",
+    "street_light": "https://images.unsplash.com/photo-1566276423184-a8c13d2a88a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwyfHxzdHJlZXQlMjBsaWdodCUyMGRhcmslMjBjaXR5JTIwdXJiYW4lMjBuaWdodHxlbnwwfHx8fDE3ODk4NzY5OTd8MA&ixlib=rb-4.1.0&q=85",
+    "garbage": "https://images.unsplash.com/photo-1762187547870-83fbeef1afcf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwzfHxvdmVyZmxvd2luZyUyMGdhcmJhZ2UlMjB3YXN0ZSUyMGJpbiUyMGNpdHl8ZW58MHx8fHwxNzg5ODc2OTk3fDA&ixlib=rb-4.1.0&q=85",
+    "after_photo_repaired": "https://images.unsplash.com/photo-1543518360-68b9612a7c8c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwxfHxzdHJlZXQlMjBsaWdodCUyMGRhcmslMjBjaXR5JTIwdXJiYW4lMjBuaWdodHxlbnwwfHx8fDE3ODk4NzY5OTd8MA&ixlib=rb-4.1.0&q=85"
+  },
+  "micro_interactions": {
+    "ai_scanner": "Cyan horizontal line sliding top to bottom over photo thumbnail with glowing trail (`bg-gradient-to-b from-cyan-500/0 via-cyan-400/80 to-cyan-500/0`)",
+    "buttons": "Hover scale 1.02, active scale 0.98, hover neon glow border",
+    "cards": "Staggered fade-in on mount using Framer Motion, subtle glass tilt on hover",
+    "pins": "Drop-down spring entrance animation on map view, pulsing radial ring for urgent tasks"
+  },
+  "testing_requirements": {
+    "data_testid_rule": "Every button, input, navigation link, card, badge, upvote toggle, modal trigger, tab, and table row MUST have a unique kebab-case data-testid attribute.",
+    "examples": [
+      "data-testid=\"nav-citizen-feed\"",
+      "data-testid=\"nav-admin-dashboard\"",
+      "data-testid=\"post-issue-button\"",
+      "data-testid=\"ai-scan-overlay\"",
+      "data-testid=\"issue-upvote-button-123\"",
+      "data-testid=\"admin-assign-worker-select\"",
+      "data-testid=\"field-worker-complete-submit\"",
+      "data-testid=\"media-upload-input\"",
+      "data-testid=\"media-preview-thumb-0\"",
+      "data-testid=\"media-remove-button-0\"",
+      "data-testid=\"video-upload-input\"",
+      "data-testid=\"issue-media-gallery-123\""
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Use dark background `#07090E` with semi-transparent frosted cards (`backdrop-blur-xl bg-slate-900/60 border border-slate-800`).",
+    "Provide clear mode switching or bottom tabs between Citizen App, Admin Dashboard, and Field Worker View.",
+    "Seed 15-20 realistic civic issues across categories (Broken Roads, Streetlights, Garbage/Waste, Water Leakage, Graffiti/Parks).",
+    "Implement the AI auto-categorization visual scan effect when uploading a photo in the Post Issue flow.",
+    "Include upvoting, distance tags, live status color badges (Pending=red, In Progress=yellow, Resolved=green), map view with custom markers, leaderboard gamification, admin worker assignment modal, and field worker completion flow.",
+    "Ensure every interactive element has a clear data-testid attribute."
+  ],
+  "media_upload": {
+    "accepted_images": [
+      "image/jpeg",
+      "image/png",
+      "image/webp"
+    ],
+    "accepted_videos": [
+      "video/mp4",
+      "video/webm",
+      "video/quicktime"
+    ],
+    "limits": {
+      "max_images_per_issue": 5,
+      "max_videos_per_issue": 1,
+      "max_image_mb": 12,
+      "max_video_mb": 50
+    },
+    "notes": [
+      "Validate real file type on the server, not just the extension.",
+      "Classification runs on an image only, never on video.",
+      "Production (Vercel) must use external object storage; serverless request bodies are capped near 4.5 MB.",
+      "Legacy issues with a single image_url must still render."
+    ]
+  }
+}
